@@ -1,13 +1,176 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Karla, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*font-size: 16px;*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: #495E57 solid 0.1rem;
+}
+
+.container-grid {
+  display: grid;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-- Navigation bar ------------------------------------------------------*/
+
+.nav-bar {
+  grid-template-columns: auto auto auto;
+  /*padding-top: 1.4em;
+  padding-bottom: 1.4em;*/
+}
+
+.nav-bar > img {
+  grid-column: 1;
+  width: 11vw;
+  justify-self: start;
+  align-self: center;
+}
+
+.nav-bar button {
+  display: none;
+}
+
+.nav-bar ul {
+  grid-column: 3;
+  display: flex;
+  justify-content: right;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+  transition: left 0.5s;
+}
+
+.nav-bar ul.expanded {
+  left: 0;
+}
+
+.nav-bar li {
+  display: flex;
+}
+
+.nav-bar a {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  /*text-transform: uppercase;*/
+  color: #495E57;
+  transition: background-color 0.5s;
+}
+
+.nav-bar a:hover {
+  background-color: #F4CE14;
+}
+
+/*-- Hero ------------------------------------------------------*/
+
+.hero {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  background-color: #495E57;
+}
+
+.hero .container-grid {
+  grid-template-columns: auto auto;
+  gap: 8vw;
+}
+
+.hero-left {
+  grid-column: 1;
+}
+
+.hero-left h1, h2 {
+  margin: 0;
+  font-family: "Markazi Text";
+  font-weight: normal;
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  color: #F4CE14;
+}
+
+.hero-left h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.hero-left p {
+  margin: 0;
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+}
+
+.hero-left a {
+  display: inline-block;
+  padding: 1rem 1.7rem 1rem 1.7rem;
+  margin-top: 6rem;
+  border-radius: 25px;
+  background-color: #F4CE14;
+}
+
+.hero-right {
+  grid-column: 2;
+  /*width: 20vw;
+  height: 52vh;
+  border: 0px solid #000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+  background-image: url("./assets/restaurant-food.jpg");
+  background-position: -10vh;
+  background-repeat: no-repeat;
+  background-size: 20vw;
+  -webkit-mask-image: url("./assets/logo.svg");
+  mask-image: url("./assets/logo.svg");
+  -webkit-mask-size: 212px 150px;
+  mask-size: 212px 150px;*/
+}
+
+.hero-right img {
+  width: 18vw;
+  border-radius: 15px;
+}
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media only screen and (max-width: 992px) {
+  .nav-bar {
+    grid-template-columns: auto auto;
+  }
+
+  .nav-bar button {
+    grid-column: 2;
+    width: 2.5rem;
+    justify-self: end;
+    display: inline-block;
+    background: none;
+    border: none;
+  }
+
+  .nav-bar ul {
+    position: absolute;
+    flex-direction: column;
+    width: 30vw;
+    height: 100vh;
+    top: 0;
+    left: -30vw;
+    background-color: #FFFFFF;
+    border-right: #495E57 solid 0.1rem;
+  }
+
+  .nav-bar li {
+    flex-direction: column;
+  }
 }
