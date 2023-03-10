@@ -1,0 +1,21 @@
+.week-specials {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+
+.week-specials-header {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 1.875rem;
+}
+
+.week-specials-header h2 {
+  line-height: 1;
+  font-family: "Markazi Text";
+  font-weight: normal;
+  font-size: 2.5rem;
+}

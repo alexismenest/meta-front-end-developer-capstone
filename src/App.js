@@ -3,7 +3,6 @@ Route,
 Routes
 } from 'react-router-dom';
 
-import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -18,8 +17,8 @@ const App = () => {
       <Main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reservations" element={<Bookings />} />
-          <Route path="/reservation-confirmation" element={<ConfirmedBooking />} />
+          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/booking-confirmation" element={<ConfirmedBooking />} />
         </Routes>
       </Main>
       <Footer />
