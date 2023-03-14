@@ -1,0 +1,28 @@
+.our-story {
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.our-story-description {
+  grid-column: 1;
+}
+
+.our-story-description h1 {
+  color: #F4CE14;
+}
+
+.our-story-description p {
+  padding-top: 1.5rem;
+}
+
+.our-story-chefs {
+  grid-column: 2;
+}
+
+.our-story-chefs img {
+  border-radius: 1rem;
+}
+
+.our-story-chefs img:first-of-type {
+  margin-bottom: 1rem;
+}

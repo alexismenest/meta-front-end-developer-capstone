@@ -1,0 +1,25 @@
+.testimonial-card {
+  grid-column: auto;
+  grid-row: 2;
+  min-height: 22.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+}
+
+.testimonial-card img {
+  width: 8rem;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+}
+
+.testimonial-card h4 {
+  margin: 0 auto 1rem auto;
+}
+
+.testimonial-card span {
+  color: #F4CE14;
+}

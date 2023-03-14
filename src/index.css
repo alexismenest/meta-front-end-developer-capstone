@@ -5,11 +5,15 @@
 
 body {
   font-family: Karla, sans-serif;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1rem;
   line-height: 1.5;
   color: #495E57;
+}
+
+header {
+  border-bottom: 1rem solid #495E57;
 }
 
 a {
@@ -17,8 +21,63 @@ a {
   color: #495E57;
 }
 
-a:hover, a:focus {
-  text-decoration: underline;
+h1, h2 {
+  line-height: 1;
+  font-family: "Markazi Text";
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+form {
+  max-width: 28.125rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+input, select {
+  height: 2.5rem;
+  padding-inline-end: 1rem;
+  padding-inline-start: 1rem;
+  outline: none;
+  border: 0.0625rem solid #E0E0E0;
+  border-radius: 0.375rem;
+  background: #FFFFFF;
+  color: #495E57;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+/*select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}*/
+
+input:focus, select:focus {
+  border-width: 0.125rem;
+  border-color: #495E57;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 img {
@@ -43,14 +102,16 @@ main > section {
 .button-primary {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
-  border: 0.1875rem solid #F4CE14;
   background-color: #F4CE14;
+  color: #495E57;
   font-weight: bold;
-  transition: background 0.5s;
+  border: 0.1875rem solid #F4CE14;
+  transition: background, border, color 0.5s;
 }
 
 .button-primary:hover, 
 .button-primary:focus {
   background-color: #495E57;
+  border-color: #495E57;
   color: #FFFFFF;
 }
