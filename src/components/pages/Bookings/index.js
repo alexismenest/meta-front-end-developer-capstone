@@ -1,6 +1,5 @@
 import { useReducer } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import './index.css';
 import { fetchAPI, submitAPI } from '../../../utils/fakeAPI';
 import pages from '../../../utils/pages';
@@ -21,7 +20,7 @@ const Bookings = () => {
   ] = useReducer(updateTimes, [], initializeTimes);
   const navigate = useNavigate();
 
-  const onSubmit = formData => {
+  const submitData = formData => {
     const response = submitAPI(formData);
     if (response) navigate(pages.get('confirmedBooking').path);
   }; 
@@ -32,7 +31,7 @@ const Bookings = () => {
       <BookingForm 
         availableTimes={availableTimes} 
         dispatchOnDateChange={dispatchOnDateChange} 
-        onSubmit={onSubmit} 
+        submitData={submitData} 
       />
     </div>
   );

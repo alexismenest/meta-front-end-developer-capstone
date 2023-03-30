@@ -17,12 +17,43 @@
 
 .our-story-chefs {
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .our-story-chefs img {
   border-radius: 1rem;
 }
 
-.our-story-chefs img:first-of-type {
-  margin-bottom: 1rem;
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 915px) {
+.our-story {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+.our-story-chefs {
+  grid-column: 1;
+  flex-direction: row;
+}
+
+.our-story-chefs img {
+  max-width: 50%;
+}
+}
+
+@media (max-width: 715px) {
+.our-story {
+  grid-template-rows: repeat(3, auto);
+}
+
+.our-story-chefs {
+  flex-direction: column;
+}
+
+.our-story-chefs img {
+  max-width: 100%;
+}
 }

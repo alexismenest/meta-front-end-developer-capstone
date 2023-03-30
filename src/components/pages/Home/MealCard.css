@@ -58,3 +58,11 @@
 .meal-card-body-footer svg {
   margin-left: 0.5rem;
 }
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 960px) {
+.meal-card {
+  grid-row: auto;
+}
+}

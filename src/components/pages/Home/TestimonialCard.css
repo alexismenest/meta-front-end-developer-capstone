@@ -23,3 +23,12 @@
 .testimonial-card span {
   color: #F4CE14;
 }
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 949px) {
+.testimonial-card {
+  grid-column: auto;
+  grid-row: auto;
+}
+}

@@ -1,5 +1,5 @@
 .week-specials {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   gap: 1.25rem;
 }
@@ -18,4 +18,28 @@
   font-family: "Markazi Text";
   font-weight: normal;
   font-size: 2.5rem;
+}
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 960px) {
+.week-specials {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.week-specials-header {
+  grid-column: 1 / 3;
+}
+}
+
+@media (max-width: 692px) {
+.week-specials {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+.week-specials-header {
+  grid-column: 1 / 2;
+}
 }

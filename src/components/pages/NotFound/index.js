@@ -1,10 +1,10 @@
-import notFoundImage from './assets/giorgio-trovato-cw1MAVs4wV8-unsplash.jpg';
+import './index.css';
 
 const NotFound = () => {
   return (
-    <>
-      <img src={notFoundImage} alt="Page not found" />
-    </>
+    <div className="container page-not-found">
+      <h2>Page not found</h2>
+    </div>
   );
 };
 

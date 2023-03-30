@@ -62,3 +62,59 @@
 .site-footer-social svg {
   margin-right: 1rem;
 }
+
+/*-- Media queries ------------------------------------------------------*/
+
+@media (max-width: 927px) {
+.site-footer .container {
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto;
+}
+
+.site-footer-social {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 2rem;
+}
+}
+
+@media (max-width: 789px) {
+.site-footer .container {
+  grid-template-columns: auto auto;
+}
+
+.site-footer-contact {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 2rem;
+}
+
+.site-footer-social {
+  grid-column: 2;
+}
+}
+
+@media (max-width: 576px) {
+.site-footer .container {
+  grid-template-columns: auto;
+}
+
+.site-footer-logo {
+  grid-row: 1;
+}
+
+.site-footer-nav {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 2rem;
+}
+
+.site-footer-contact {
+  grid-row: 3;
+}
+
+.site-footer-social {
+  grid-column: 1;
+  grid-row: 4;
+}
+}

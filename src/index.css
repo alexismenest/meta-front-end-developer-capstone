@@ -60,12 +60,6 @@ input, select {
   transition: border-color 0.3s;
 }
 
-/*select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}*/
-
 input:focus, select:focus {
   border-width: 0.125rem;
   border-color: #495E57;

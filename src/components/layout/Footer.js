@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-
 import './Footer.css';
 import logoWhiteImage from './assets/logo-white.png';
 import pages from '../../utils/pages';

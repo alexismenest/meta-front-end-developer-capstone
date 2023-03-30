@@ -48,5 +48,18 @@
 
 /*-- Media queries ------------------------------------------------------*/
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 792px) {
+.hero .container {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+.hero-information {
+  grid-row: 1;
+}
+
+.hero-image {
+  grid-column: 1;
+  grid-row: 2;
+}
 }

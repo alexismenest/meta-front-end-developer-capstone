@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import bruschettaImage from './assets/bruschetta.jpg';
 import greekSaladImage from './assets/greek-salad.jpg';
 import lemonDessertImage from './assets/lemon-dessert.jpg';

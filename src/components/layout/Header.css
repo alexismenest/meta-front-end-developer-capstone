@@ -56,7 +56,7 @@
   transition: background-color 0.5s;
 }
 
-.currentLocation, 
+.current-location, 
 .nav-bar-links a:hover, 
 .nav-bar-links a:focus {
   background-color: #F4CE14;
@@ -83,6 +83,8 @@
     top: 0;
     left: -50%;
     background-color: #FFFFFF;
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
   }
 
   .nav-bar-links li {

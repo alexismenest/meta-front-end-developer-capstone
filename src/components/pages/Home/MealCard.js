@@ -1,7 +1,6 @@
 import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-
 import './MealCard.css';
 import pages from '../../../utils/pages';
 
